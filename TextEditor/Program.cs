@@ -59,8 +59,8 @@ namespace TextEditor
             };
 
             // Добавление событий с помощью методов, реализующих делегат
-            textBox.TextChanged += new EventHandler(textBox_TextChanged);
-            void textBox_TextChanged(object sender, EventArgs e)
+            textBox.TextChanged += new EventHandler(TextChanged);
+            void TextChanged(object sender, EventArgs e)
             {
                 if (textBox.Text.Contains("сохранить") || textBox.Text.Contains("Cохранить") || textBox.Text.Contains("save") || textBox.Text.Contains("Save"))
                 {
